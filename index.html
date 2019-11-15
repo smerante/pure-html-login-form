@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base href="">
+  <title>Login Form</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script async src="./index.js"></script>
+</head>
+
+<body>
+  <h1 id="loginMessage" class="login-alert"></h1>
+  <div id="loginForm" class="login-form">
+    <h1 id="title" class="title">Login Form</h1>
+
+    <div class="form-fields">
+      <div class="form-field">
+        <label class="form-input-label" for="username">Username</label>
+        <input class="form-input" id="username" type="text" oninput="verifyInput()" onkeydown="submit(event)" />
+        <span id="usernameError" aria-live="assertive" class="form-error"></span>
+      </div>
+      <div class="form-field">
+        <label class="form-input-label" for="pwd">Password</label>
+        <input class="form-input" id="pwd" type="password" oninput="verifyInput()" onkeydown="submit(event)" />
+        <span id="pwdError" aria-live="assertive" class="form-error"></span>
+      </div>
+      <button class="submit" type="button" onclick="submit()">Login</button>
+    </div>
+  </div>
+
+</body>
+
+</html>

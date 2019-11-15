@@ -1,0 +1,138 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-family: "Open Sans", sans-serif;
+}
+html,
+body {
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+}
+
+.login-form {
+  padding: 64px;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .login-form {
+    padding: 16px;
+  }
+}
+.login-form-valid {
+  display: none;
+}
+
+.title {
+  font-size: 2rem;
+  width: calc(100% - 64px);
+  padding: 32px 32px 0px 32px;
+  text-align: center;
+  position: relative;
+}
+
+.form-fields {
+  display: flex;
+  width: calc(100% - 64px);
+  padding: 32px;
+  font-size: 1.25rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+}
+@media only screen and (max-width: 768px) {
+  .form-fields {
+    width: calc(100% - 32px);
+    padding: 16px;
+  }
+}
+
+.form-field {
+  padding: 4px 16px;
+  display: block;
+  width: calc(100% - 32px);
+  position: relative;
+}
+
+.form-input-label {
+  display: block;
+  padding: 8px 0px;
+  text-align: left;
+}
+
+.form-input {
+  outline: none;
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 32px;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  width: calc(100% - 10px);
+  padding: 4px;
+}
+
+.form-input:focus {
+  border: 2px solid blue;
+  width: calc(100% - 12px);
+  height: 30px;
+  outline-offset: 0px;
+  appearance: none;
+}
+
+.submit {
+  width: 128px;
+  height: 64px;
+  margin: 8px auto;
+  outline: 1px solid black;
+  cursor: pointer;
+  background: none;
+  font-size: 1.25rem;
+}
+
+.submit:focus {
+  outline: 2px solid blue;
+  outline-offset: 0px;
+  appearance: none;
+}
+
+.form-error {
+  display: block;
+  padding: 8px 0px;
+  text-align: left;
+  color: red;
+  position: relative;
+  width: 100%;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  min-height: 1.25rem;
+}
+
+.login-alert {
+  display: none;
+  width: calc(100% - 32px);
+  text-align: center;
+  font-size: 1.25rem;
+  color: green;
+  padding: 8px;
+  margin: 32px 8px;
+}
+.login-alert-visible {
+  display: block;
+  border: 1px solid green;
+  top: 25%;
+  position: absolute;
+}
